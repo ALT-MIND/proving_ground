@@ -1,8 +1,7 @@
-from kivy.app import App
+from kivymd.app import MDApp
 from kivy.uix.boxlayout import BoxLayout
 from kivy.lang import Builder
 from kivy.properties import ObjectProperty
-from kivy.uix.button import Button
 
 math_space = ObjectProperty()
 class Root(BoxLayout):
@@ -15,8 +14,9 @@ class Root(BoxLayout):
             self.math_space.text = str(round(result, 3))
         elif type(result) == type(9):
             self.math_space.text = str(result)
-class MyApp(App):
+class MyApp(MDApp):
     def build(self):
+        self.theme_cls.theme_style = "Dark" 
         return Root()
     
 MyApp().run()

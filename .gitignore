@@ -1,7 +1,9 @@
 
 ### Linux ###
 *~
-Kivy Framework/bin
+Kivy_Framework/Calculator/bin
+Kivy_Framework/Calculator/.buildozer
+Kivy_Framework/Calculator/.vscode
 # temporary files which can be created if a process still has a handle open of a deleted file
 .fuse_hidden*
 
