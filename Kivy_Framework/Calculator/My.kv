@@ -2,7 +2,7 @@
 #:import MDRectangleFlatButton kivymd.uix.button
 #:import MDLabel kivymd.uix.label
 
-<NumberButton@MDFlatButton>:
+<NumberButton@MDRectangleFlatButton>:
 	size_hint: (1, 1)
 	on_release:
 		app.root.math_space.text += self.text
@@ -10,7 +10,7 @@
 <OperatorButton@NumberButton>:
 
 
-<ClearButton@MDFlatButton>:
+<ClearButton@MDRectangleFlatButton>:
 	on_release:
 		app.root.math_space.text = ''
 
@@ -21,6 +21,7 @@
 	math_space : math_space
 
 	MDLabel:
+		theme_text_color: 'Primary'
 		id: math_space
 		font_size: '100sp'
 		size_hint: 1, .35

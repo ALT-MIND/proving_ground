@@ -17,6 +17,7 @@ class Root(BoxLayout):
 class MyApp(MDApp):
     def build(self):
         self.theme_cls.theme_style = "Dark" 
+        self.theme_cls.primary_palette = "DeepPurple"
         return Root()
     
 MyApp().run()
