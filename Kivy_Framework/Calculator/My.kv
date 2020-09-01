@@ -1,8 +1,8 @@
 #:kivy 1.11.1
 #:import MDRectangleFlatButton kivymd.uix.button
 #:import MDLabel kivymd.uix.label
-
 <NumberButton@MDRectangleFlatButton>:
+	font_size: '15sp'
 	size_hint: (1, 1)
 	on_release:
 		app.root.math_space.text += self.text
@@ -11,6 +11,7 @@
 
 
 <ClearButton@MDRectangleFlatButton>:
+	font_size: '15sp'
 	on_release:
 		app.root.math_space.text = ''
 
@@ -95,6 +96,7 @@
 				text: '.'
 			
 			MDRectangleFlatButton:
+				font_size: '15sp'
 				size_hint: (1, 1)
 				on_release:
 					root.calculate_result()
